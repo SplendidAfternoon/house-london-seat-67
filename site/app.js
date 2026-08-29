@@ -37,8 +37,8 @@ function renderBars(area) {
     seg.className = `seg ${COLORS[row.key]}`;
     seg.style.flex = String(Math.max(row.count, 0));
     const rate = Math.round((row.approval_rate || 0) * 100);
-    seg.textContent = row.count ? `${row.label} ${pct(row.count, total)} · ${rate}% ok` : "";
-    seg.title = `${row.label}: ${row.count.toLocaleString()} apps, ${rate}% approved`;
+    seg.textContent = row.count ? `${pct(row.count, total)}` : "";
+    seg.title = `${row.label}: ${row.count.toLocaleString()} applications, ${rate}% approved`;
     seg.addEventListener("click", () => showExamples(row));
     bar.appendChild(seg);
   }
@@ -46,9 +46,20 @@ function renderBars(area) {
 
   const replace = area.replace?.count || 0;
   const extend = area.extend?.count || 0;
+  const ratio = replace > 0 ? (extend / replace).toFixed(1) : "—";
   document.getElementById("summary").textContent = total
-    ? `${total.toLocaleString()} classified applications. Extend ${extend.toLocaleString()} vs replace ${replace.toLocaleString()}.`
-    : "No classified applications for this borough.";
+    ? `${total.toLocaleString()} housing-related applications. ${extend.toLocaleString()} extend vs ${replace.toLocaleString()} knock-down & rebuild (${ratio} to 1).`
+    : "No applications in this view.";
+  const legend = document.getElementById("legend");
+  if (legend) {
+    legend.innerHTML = rows
+      .filter((r) => r.count)
+      .map(
+        (r) =>
+          `<span class="leg-${r.key}"><strong>${r.label}</strong> ${pct(r.count, total)} · ${Math.round((r.approval_rate || 0) * 100)}% approved</span>`
+      )
+      .join("");
+  }
 }
 
 function showExamples(row) {
@@ -89,13 +100,14 @@ function areaFor(data, value) {
 loadData()
   .then((data) => {
     document.getElementById("honesty").textContent = data.honesty || "";
-    const hero = document.querySelector(".hero-stat");
+    const hero = document.getElementById("hero-stat");
     if (hero && data.london) {
       const t = ORDER.reduce((s, k) => s + data.london[k].count, 0);
-      const ext = Math.round((100 * data.london.extend.count) / t);
-      const convAp = Math.round(data.london.convert.approval_rate * 100);
-      const rep = Math.round((100 * data.london.replace.count) / t);
-      hero.textContent = `Extend ${ext}% · Convert ${convAp}% approved · Replace ${rep}%`;
+      const extShare = Math.round((100 * data.london.extend.count) / t);
+      const repShare = Math.round((100 * data.london.replace.count) / t);
+      const extAp = Math.round(data.london.extend.approval_rate * 100);
+      const repAp = Math.round(data.london.replace.approval_rate * 100);
+      hero.textContent = `${extShare}% of apps extend in place · ${repShare}% knock down & rebuild · both ~${extAp}–${repAp}% approved`;
     }
     const insight = document.getElementById("insight");
     if (insight && data.takeaways?.headline) {

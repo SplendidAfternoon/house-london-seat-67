@@ -127,7 +127,7 @@ def main() -> None:
         }
 
     payload = {
-        "title": "The Replacement Gap",
+        "title": "Extend-in-Place",
         "seat": 67,
         "source": "https://foreman.house-london.uk/",
         "n_applications": int(len(df)),
@@ -136,9 +136,8 @@ def main() -> None:
         "london": london,
         "boroughs": boroughs,
         "honesty": (
-            "Keyword classifier on description text — illustrative, not ground truth. "
-            "Excludes post-permission condition discharges from replace counts. "
-            "Not a pro-demolition scorecard."
+            "Sorted from application description text — patterns, not a legal record of each case. "
+            "Paperwork-only updates after permission was granted are excluded."
         ),
     }
 

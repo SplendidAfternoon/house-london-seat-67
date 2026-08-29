@@ -19,7 +19,7 @@ Foreman is our **primary** dataset. These sources **corroborate direction**, not
 | Our finding | Foreman | External corroboration |
 |-------------|---------|------------------------|
 | Extend ~71%, replace ~11% | Keyword taxonomy on descriptions | PLD: **146k** householder permissions vs **8.3k** conservation-area demolition householder apps — **17.5:1** ([`pld-triangulation.md`](pld-triangulation.md)) |
-| 6.3:1 extend:replace volume | `validation.json` | #0: small schemes (~15% of **delivered** units); large (100+) 59–72% — replacement-scale work is structurally rarer at application level |
+| 6.3:1 extend:replace volume | `validation.json` | #0: small schemes (~15% of **delivered** units); large (100+) 59–72% — knock-down-scale work is structurally rarer at application level |
 
 **Safe to say:** “London mostly submits extend-in-place applications; estate-scale replace is a thin tail — consistent with GLA structured types and #0 delivery mix.”
 
@@ -30,7 +30,7 @@ Foreman is our **primary** dataset. These sources **corroborate direction**, not
 | Extend 60.2%, replace 57.5% | Wilson CIs, 151k apps | PLD householder permission **82%** vs conservation demolition **84%** — comparable ([`pld-triangulation.md`](pld-triangulation.md)) |
 | Cluster bootstrap CI spans zero | Borough bootstrap −6.3 to +2.8 pp | Not a “refusal gap” story once geography is clustered |
 
-**Safe to say:** “Approval rates are comparable; the replacement gap is **what we ask for**, not systematic refusal of demolition.”
+**Safe to say:** “Approval rates are comparable; the thin knock-down tail is **what gets filed**, not systematic refusal.”
 
 ### “Convert / change-of-use is harder than extend”
 

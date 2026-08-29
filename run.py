@@ -1,4 +1,4 @@
-"""Seat 67 — The Replacement Gap: fetch → build → serve.
+"""Seat 67 — Extend-in-Place: fetch → build → serve.
 
     python run.py
 

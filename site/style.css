@@ -66,6 +66,30 @@ h1 {
   margin: 1.75rem 0 1.25rem;
 }
 
+.chart-label {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+
+.chart-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0.75rem 0 0;
+}
+
+.chart-legend strong { color: var(--fg); }
+
+.chart-legend .leg-extend strong { color: var(--extend); }
+.chart-legend .leg-convert strong { color: var(--convert); }
+.chart-legend .leg-replace strong { color: var(--replace); }
+.chart-legend .leg-ldc strong { color: var(--ldc); }
+
 select {
   background: #1a1e1c;
   color: var(--fg);

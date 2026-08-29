@@ -216,7 +216,7 @@ samples = ss["description"].dropna().head(8).tolist()
 
 payload = {
 
-    "headline": "When London asks to replace, approval is comparable to extend — the gap is volume, not refusal.",
+    "headline": "London mostly extends in place. Knock-down approval is comparable to extend; the asymmetry is submission volume.",
 
     "london_approval_by_category": london_rates,
 

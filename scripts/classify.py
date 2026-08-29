@@ -14,9 +14,9 @@ CATEGORY_ORDER = ["extend", "convert", "replace", "ldc"]
 
 CATEGORY_LABELS = {
     "extend": "Extend",
-    "convert": "Convert",
-    "replace": "Replace / demo",
-    "ldc": "LDC",
+    "convert": "Change of use",
+    "replace": "Knock down & rebuild",
+    "ldc": "Legalise existing",
     "other": "Other",
 }
 

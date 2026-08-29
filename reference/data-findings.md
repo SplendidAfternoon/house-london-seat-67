@@ -4,7 +4,7 @@ Generated after full validation program. See [`reference/methodology-one-pager.m
 
 ## Headline
 
-**When London asks to replace, approval is comparable to extend — the gap is volume, not refusal.**
+**London mostly extends in place. Knock-down approval is comparable to extend; the asymmetry is submission volume.**
 
 | Category | Share of classified | Approval rate |
 |----------|-------------------|---------------|

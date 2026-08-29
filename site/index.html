@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Seat 67 — The Replacement Gap</title>
+    <title>Seat 67 — Extend-in-Place</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <p class="eyebrow">Seat 67 · House London #1</p>
-      <h1>The Replacement Gap</h1>
-      <p class="hero-stat">Extend 55% · Convert 46% approved · Replace 19%</p>
+      <h1>Extend-in-Place</h1>
+      <p class="hero-stat" id="hero-stat"></p>
       <p id="insight" class="insight"></p>
       <p class="lede">
-        Everyone asks if we <em>should</em> tear down old buildings. I asked if the
-        system <em>ever does</em>. The applications say: we dormer.
+        Keyword-sorted Foreman applications for London. Most filings ask to extend;
+        knock-down-and-rebuild is rare. Conditional on filing, approval rates look similar.
       </p>
     </header>
 
@@ -24,7 +24,9 @@
     </section>
 
     <section class="chart-wrap">
+      <p class="chart-label">What people apply for (click a segment for examples)</p>
       <div id="bars" role="img" aria-label="Application mix stacked bar"></div>
+      <p id="legend" class="chart-legend"></p>
       <p id="summary"></p>
     </section>
 

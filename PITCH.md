@@ -15,7 +15,7 @@
 | 0:50 | Borough → **Barking and Dagenham** | "Forty-one percent of applications here aren't build requests — they're lawful development certificates. Legalising lofts, not replacing stock." |
 | 1:15 | Borough → **Newham** | "Biggest convert penalty: sixty-six percent extend approved, twenty-six percent convert. The compromise path dies here." |
 | 1:40 | London → click **Convert** | "Forty-six percent convert approval vs sixty extend. HMO and change-of-use conversions even worse — forty percent vs forty-eight." |
-| 2:10 | Close | "The replacement gap is in what we submit — six-to-one extend versus replace by volume." |
+| 2:10 | Close | "The asymmetry is in what gets filed — six-to-one extend versus knock-down by volume." |
 | 2:50 | Honesty (one line) | "Keyword classifier validated on 400 stratified apps; R Wilson CIs; not pro-demolition." |
 
 ## If over 3:00

@@ -20,7 +20,7 @@ Interactive explorer of **151,398** classified Foreman planning applications acr
 
 ## What we claim
 
-> London mostly **extends in place**. Replace and extend **approval rates are similar (~58–60%)**. The **replacement gap is volume**, not refusal.
+> London mostly **extends in place**. Knock-down and extend **approval rates are similar (~58–60%)**. The **asymmetry is submission volume**, not refusal.
 
 ## What we do not claim
 

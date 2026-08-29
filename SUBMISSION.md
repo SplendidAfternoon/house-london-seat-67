@@ -1,10 +1,10 @@
-# Submission — Seat 67: The Replacement Gap
+# Submission — Seat 67: Extend-in-Place
 
 | Field | Value |
 |-------|--------|
 | **Seat** | 67 |
 | **Question** | Why aren't we tearing down old buildings? |
-| **Team** | Seat 67 / The Replacement Gap |
+| **Team** | Seat 67 / Extend-in-Place |
 
 ## Fastest demo (no wifi)
 
