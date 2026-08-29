@@ -1,15 +1,14 @@
 # Seat 67 — Tear-Down Applications (Technical Reference)
 
-**Present**
+**Present (GitHub Pages — live)**
 
 | | Link |
 |---|------|
-| **Presentation** | https://splendidafternoon.github.io/house-london-seat-67/presentation.html |
-| **Interactive map** | https://splendidafternoon.github.io/house-london-seat-67/tear-down-applications.html |
+| **Presentation** | https://splendidafternoon.github.io/presentation.html |
+| **Interactive map** | https://splendidafternoon.github.io/tear-down-applications.html |
+| **Landing** | https://splendidafternoon.github.io/ |
 
 Slides: ← → arrow keys. Map: pick a borough, click a bar segment.
-
-**Note:** Pages deploy runs on push to `main` (`.github/workflows/pages.yml`). First deploy may take 2–3 minutes.
 
 > Foreman keyword sort of 151,398 London planning applications, grouped by description into extend, change of use, knock-down & rebuild, and legalise existing.
 
@@ -51,8 +50,8 @@ Extend applications outnumber knock-down filings ~6:1. Stated approval rates for
 
 | File | Role |
 |------|------|
-| [presentation.html](https://splendidafternoon.github.io/house-london-seat-67/presentation.html) | Slide deck (GitHub Pages) |
-| [tear-down-applications.html](https://splendidafternoon.github.io/house-london-seat-67/tear-down-applications.html) | Borough bar chart + examples (GitHub Pages) |
+| [presentation.html](https://splendidafternoon.github.io/presentation.html) | Slide deck (GitHub Pages) |
+| [tear-down-applications.html](https://splendidafternoon.github.io/tear-down-applications.html) | Borough bar chart + examples (GitHub Pages) |
 | `dist/tear-down-applications.html` | Same map, offline |
 | `dist/presentation.html` | Same slides, offline |
 | `reference/methodology-one-pager.md` | Validation map |

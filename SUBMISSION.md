@@ -8,10 +8,10 @@
 
 ## Fastest demo (no wifi)
 
-**GitHub Pages (any browser, needs wifi):**
+**GitHub Pages (live):**
 
-- https://splendidafternoon.github.io/house-london-seat-67/presentation.html
-- https://splendidafternoon.github.io/house-london-seat-67/tear-down-applications.html
+- https://splendidafternoon.github.io/presentation.html
+- https://splendidafternoon.github.io/tear-down-applications.html
 
 **Offline:** open **`dist/tear-down-applications.html`** or **`dist/presentation.html`** — double-click. Arrow keys on slides.
 
