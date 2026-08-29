@@ -260,11 +260,6 @@ hmo_stats = payload["hmo_convert"]
 top_gap = gap_rows[0] if gap_rows else None
 replace_pct = round(london_rates["replace"]["approval_rate"] * 100)
 extend_pct = round(london_rates["extend"]["approval_rate"] * 100)
-compare = (
-    "comparable to"
-    if abs(replace_pct - extend_pct) <= 3
-    else ("higher than" if replace_pct > extend_pct else "below")
-)
 payload["pitch_hooks"] = [
     f"Knock-down applications: {replace_pct}% approved. Extend: {extend_pct}%. Count ratio ~6:1.",
     f"Barking: {round(ldc_boroughs[0]['ldc_pct'] * 100)}% of classified apps are LDCs — legalising existing work, not new builds.",

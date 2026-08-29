@@ -18,7 +18,7 @@ Used by [`scripts/gold_label.py`](scripts/gold_label.py) → [`scripts/classify.
 2. **current** — same as strict (legacy compatibility)
 3. **permissive** — rate = (approved + neutral) / (approved + refused + neutral + unknown)
 
-Headline extend vs replace gap should remain stable (~2pp) across policies. See [`reference/validation.md`](reference/validation.md).
+Extend vs replace approval gap stays ~2pp across the three outcome-coding policies. See [`reference/validation.md`](validation.md).
 
 ## Top unknown labels (full register)
 

@@ -1,8 +1,8 @@
 # External sources — triangulation for Seat 67 claims
 
-Foreman is our **primary** dataset. These sources **corroborate direction**, not exact percentages, unless we run a row-level join (future work).
+Foreman is the **primary** dataset. These sources check direction, not exact percentages, unless we run a row-level join (future work).
 
-## Citation stack (one slide)
+## Citation stack
 
 | Layer | Source | Role |
 |-------|--------|------|
@@ -14,50 +14,42 @@ Foreman is our **primary** dataset. These sources **corroborate direction**, not
 
 ## Claim → evidence map
 
-### “We extend in place — replace is rare (volume gap)”
+### Extend filings dominate; knock-down is ~11%
 
 | Our finding | Foreman | External corroboration |
 |-------------|---------|------------------------|
 | Extend ~71%, replace ~11% | Keyword taxonomy on descriptions | PLD: **146k** householder permissions vs **8.3k** conservation-area demolition householder apps — **17.5:1** ([`pld-triangulation.md`](pld-triangulation.md)) |
-| 6.3:1 extend:replace volume | `validation.json` | #0: small schemes (~15% of **delivered** units); large (100+) 59–72% — knock-down-scale work is structurally rarer at application level |
+| 6.3:1 extend:replace volume | `validation.json` | #0: small schemes (~15% of **delivered** units); large (100+) 59–72% |
 
-**Safe to say:** “Extend filings dominate; knock-down is ~11% of classified apps — consistent with GLA structured types and #0 delivery mix.”
-
-### “Replace and extend approval rates are similar (~58–60%)”
+### Extend and knock-down approval rates sit within a few points
 
 | Our finding | Foreman | External corroboration |
 |-------------|---------|------------------------|
-| Extend 60.2%, replace 57.5% | Wilson CIs, 151k apps | PLD householder permission **82%** vs conservation demolition **84%** — comparable ([`pld-triangulation.md`](pld-triangulation.md)) |
-| Cluster bootstrap CI spans zero | Borough bootstrap −6.3 to +2.8 pp | Not a “refusal gap” story once geography is clustered |
+| Extend 60.2%, replace 57.5% | Wilson CIs, 151k apps | PLD householder permission **82%** vs conservation demolition **84%** ([`pld-triangulation.md`](pld-triangulation.md)) |
+| Borough bootstrap CI spans zero | −6.3 to +2.8 pp | Clustered geography; point gap 2.6pp |
 
-**Safe to say:** “Approval rates are comparable; the thin knock-down tail is **what gets filed**, not systematic refusal.”
-
-### “Convert / change-of-use is harder than extend”
+### Change-of-use approval runs below extend
 
 | Our finding | Foreman | External corroboration |
 |-------------|---------|------------------------|
 | Convert ~46% vs extend ~60% | Keyword bucket | **The Spike (PlanIt):** conversion / change-of-use **63.8–65.7% approved** vs London base **~80–85%** ([#0 conclusions](https://www.house-london.uk/hackathons/zero/conclusions/)) |
-| Newham convert penalty | Borough drill-down | Same structural pattern: **what you propose** predicts outcome more than **where** (Spike ROC-AUC 0.70–0.78 text-only) |
+| Newham convert penalty | Borough drill-down | Text predicts outcome more than borough (Spike ROC-AUC 0.70–0.78) |
 
 **PLD caveat:** Prior-approval “Change of use” rows on PLD are a high-approval subset (~85%) — different population from Foreman’s broad convert bucket. Use Spike/PlanIt for convert penalty, not PLD prior-approval counts alone.
 
-**Safe to say:** “Convert penalty matches independent PlanIt analysis from House London #0 — not a Foreman-only artefact.”
-
-### “LDC / legalise ≠ build”
+### LDC / legalise ≠ build
 
 | Our finding | Foreman | External corroboration |
 |-------------|---------|------------------------|
 | LDC ~7% of apps, ~83% approval | Keyword “lawful development” | PLD **Lawful Development Certificate** is a first-class application type ([PLD question set PDF](https://www.london.gov.uk/sites/default/files/planning_london_datahub_questions.pdf)) |
-| Barking ~41% LDC | Borough view | Certificates legalise existing use — structurally non-build in both datasets |
+| Barking ~41% LDC | Borough view | Certificates legalise existing use |
 
-### “Approved ≠ completed (post-permission gap)”
+### Approved ≠ completed (context only)
 
-Not our headline, but strengthens policy urgency without claiming causation:
+Not a Seat 67 headline; background for policy discussion:
 
 - **Homes vs Hotels (#0):** 320,203 approved vs 184,169 completed (2019/20–2023/24) — [conclusions](https://www.house-london.uk/hackathons/zero/conclusions/)
 - **Stalled London (#0):** 100k+ approved 2015–21 with no start (PLD-backed; headline likely overestimate per #0 site checks)
-
-**Safe to say:** “We rarely **ask** to replace; London also **under-delivers** much of what it approves — different mechanisms.”
 
 ## House London Drive (not yet joined)
 
@@ -81,4 +73,4 @@ Outputs: `data/processed/pld_sample.json`, `reference/pld-triangulation.md`.
 
 - Row-level Foreman ↔ PLD join (Foreman `reference` field ~99% empty)
 - Exact PLD percentages match Foreman percentages (different population and indexing)
-- Causal “why” for convert penalty or delivery gap
+- Causal explanation for convert penalty or delivery gap

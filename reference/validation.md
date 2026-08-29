@@ -1,4 +1,4 @@
-# Validation — R headline check (Seat 67)
+# Validation — R output (Seat 67)
 
 **Engine:** R R version 4.6.1 (2026-06-24 ucrt)
 **Generated:** 2026-08-29T16:03:05+0100

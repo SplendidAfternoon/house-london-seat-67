@@ -4,7 +4,7 @@
 
 Interactive explorer of **151,398** classified Foreman planning applications across London, bucketed by keyword taxonomy: **extend / convert / replace / LDC**.
 
-**Offline demo:** `dist/tear-down-applications.html`
+**Offline demo:** https://splendidafternoon.github.io/tear-down-applications.html (also `dist/tear-down-applications.html`)
 
 ## How we validated
 
@@ -12,7 +12,7 @@ Interactive explorer of **151,398** classified Foreman planning applications acr
 |-------|--------|--------|
 | **Taxonomy** | 400-app stratified sample, agent gold rubric + independent pass-2 (`gold_classify_b`) | Legacy classifier **92.2%** acc / macro-F1 **0.92**; pass-2 κ on 80 rows — see classifier-validation.md |
 | **Approval rates** | Wilson 95% CIs on 151k apps | Extend 60.2% (59.9–60.4); replace 57.5% (56.8–58.3) |
-| **Headline** | Effect size + volume ratio | **−2.6pp** approval gap; **6.3:1** extend:replace volume |
+| **Effect size** | Approval gap + volume ratio | **−2.6pp** approval gap; **6.3:1** extend:replace volume |
 | **Cluster uncertainty** | Borough bootstrap (B=500) | Replace−extend diff 95% CI: −6.3 to +2.8 pp |
 | **Outcome coding** | 3-policy sensitivity | Gap stable under strict/current/permissive |
 | **Structured fields** | n_dwellings, housing_relevance_score cross-check | Mostly empty / non-discriminating — see `reference/structured-validation.md` |

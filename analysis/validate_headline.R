@@ -145,7 +145,7 @@ audit <- as.list(table(raw_dec$bucket))
 audit$pct_unknown <- round(100 * audit$unknown / nrow(raw_dec), 2)
 
 interpretation <- sprintf(
-  "%.1fpp approval gap (cluster bootstrap 95%% CI %.1f to %.1f). Volume ratio extend:replace %.1f:1 — that is the story.",
+  "%.1fpp approval gap (cluster bootstrap 95%% CI %.1f to %.1f). Volume ratio extend:replace %.1f:1.",
   effect_pp, cluster_diff["lo"], cluster_diff["hi"], vol_ratio
 )
 
@@ -188,7 +188,7 @@ md <- c(
   paste0("**Engine:** R ", R.version.string),
   paste0("**Generated:** ", payload$generated_at),
   "",
-  paste0("**Headline:** ", interpretation),
+  paste0("**Summary:** ", interpretation),
   "",
   "## Approval by category (Wilson 95% CI)",
   "",

@@ -26,7 +26,7 @@ Directional cross-check of Foreman keyword buckets against GLA structured fields
 
 **Volume ratio (extend:replace on PLD structured types): 17.5:1** — Foreman keyword ratio 6.3:1; same direction, PLD gap wider.
 
-**Approval on PLD householder extend vs conservation demolition: 81.9% vs 84.2%** — comparable, matches Foreman ~60% vs ~58% story.
+**Approval on PLD householder extend vs conservation demolition: 81.9% vs 84.2%** — same ordering as Foreman 60% vs 58%.
 
 ## Sample bucket mix (5k docs, type_full → buckets)
 
@@ -40,10 +40,10 @@ Directional cross-check of Foreman keyword buckets against GLA structured fields
 | other | 49.6% |
 | replace | 0.9% |
 
-## How to use in the pitch
+## Notes for presentation
 
-- **Volume gap (strong):** PLD counts **146,086** householder permissions vs **8,344** householder demolition-in-conservation — **17.5:1**. Same story as Foreman six-to-one extend:replace.
-- **Approval similarity (strong):** Structured householder extend and demolition types approve at similar rates on PLD — gap is volume, not refusal.
+- **Volume:** PLD counts **146,086** householder permissions vs **8,344** householder demolition-in-conservation — **17.5:1**. Foreman keyword ratio 6.3:1.
+- **Approval:** PLD householder extend and demolition types both ~82–84% approved. Foreman extend 60%, knock-down 58%.
 - **Convert penalty (use #0, not this PLD slice):** Prior-approval office-to-resi change-of-use is a high-approval subset. For convert penalty cite [The Spike / PlanIt](https://www.house-london.uk/hackathons/zero/conclusions/) — conversion 63.8–65.7% vs ~80–85% base — and Foreman keyword convert bucket (46%).
 
 Full JSON: `data/processed/pld_sample.json`  

@@ -1,5 +1,0 @@
-=== Seat 67 validation (R) ===
- R version: R version 4.6.1 (2026-06-24 ucrt) 
-
-Wrote C:/Users/katak/Projects/house-london-seat-67/data/processed/validation.json 
--2.6pp approval gap (cluster bootstrap 95% CI -6.3 to 2.8). Volume ratio extend:replace 6.3:1 — that is the story. 
