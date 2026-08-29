@@ -9,7 +9,7 @@
 
 Slides: ← → arrow keys. Map: pick a borough, click a bar segment.
 
-**Note:** If those URLs 404, enable Pages once: [repo Settings → Pages](https://github.com/SplendidAfternoon/house-london-seat-67/settings/pages) → **Deploy from branch** → branch **gh-pages** → folder **/ (root)** → Save. Takes ~1 minute to go live.
+**Note:** Pages deploy runs on push to `main` (`.github/workflows/pages.yml`). First deploy may take 2–3 minutes.
 
 > Foreman keyword sort of 151,398 London planning applications, grouped by description into extend, change of use, knock-down & rebuild, and legalise existing.
 
