@@ -10,6 +10,8 @@
 
 Slides: ← → arrow keys. Map: pick a borough, click a bar segment.
 
+Published from [`SplendidAfternoon.github.io`](https://github.com/SplendidAfternoon/SplendidAfternoon.github.io). After editing demos, run `python scripts/publish_pages.py` then `python scripts/sync_user_pages.py`.
+
 > Foreman keyword sort of 151,398 London planning applications, grouped by description into extend, change of use, knock-down & rebuild, and legalise existing.
 
 House London #1 hackathon artifact. Categories come from free-text descriptions, not council form codes. Post-permission admin (condition discharges, S73) excluded. Counts applications and stated decisions, not homes built.
