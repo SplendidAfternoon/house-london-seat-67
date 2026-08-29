@@ -1,4 +1,4 @@
-"""Seat 67 — Extend-in-Place: fetch → build → serve.
+"""Seat 67 — Tear-Down Applications: fetch → build → serve.
 
     python run.py
 
@@ -73,7 +73,7 @@ def main() -> None:
     url = f"http://localhost:{port}"
     print(f"\n==> {total}/{total}  Serving the site\n")
     print(f"    {url}")
-    print("    Offline demo: dist/replacement-gap.html")
+    print("    Offline demo: dist/tear-down-applications.html")
     print("    Leave this window open. Press Ctrl+C to stop.\n")
 
     try:

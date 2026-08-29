@@ -21,7 +21,7 @@ Foreman is our **primary** dataset. These sources **corroborate direction**, not
 | Extend ~71%, replace ~11% | Keyword taxonomy on descriptions | PLD: **146k** householder permissions vs **8.3k** conservation-area demolition householder apps — **17.5:1** ([`pld-triangulation.md`](pld-triangulation.md)) |
 | 6.3:1 extend:replace volume | `validation.json` | #0: small schemes (~15% of **delivered** units); large (100+) 59–72% — knock-down-scale work is structurally rarer at application level |
 
-**Safe to say:** “London mostly submits extend-in-place applications; estate-scale replace is a thin tail — consistent with GLA structured types and #0 delivery mix.”
+**Safe to say:** “Extend filings dominate; knock-down is ~11% of classified apps — consistent with GLA structured types and #0 delivery mix.”
 
 ### “Replace and extend approval rates are similar (~58–60%)”
 

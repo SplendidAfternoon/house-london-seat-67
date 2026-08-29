@@ -1,21 +1,21 @@
 # 3-minute pitch — Seat 67 (verified data, click-by-click)
 
-**Open:** `dist/replacement-gap.html` (offline).
+**Open:** `dist/tear-down-applications.html` (offline).
 
-## The insight (memorise this)
+## Numbers (memorise)
 
-> When London **asks** to replace, approval is **comparable to extend** (~58% vs ~60%). The gap is **volume**, not refusal. We extend in place (~71% extend, ~11% replace).
+71% extend, 11% knock-down. Extend approved 60%, knock-down 58%. Count ratio ~6:1.
 
 ## Script
 
 | Time | Do | Say |
 |------|-----|-----|
-| 0:00 | Page open | "Seat 67: why don't we tear down old buildings? I classified 151,000 Foreman applications — excluding post-permission admin and accessory demolitions." |
-| 0:20 | Point at hero + headline | "Seventy-one percent extend. Eleven percent replace. **Replace approves at fifty-eight percent — comparable to extend at sixty.** We don't fail at demolition; we rarely ask." |
-| 0:50 | Borough → **Barking and Dagenham** | "Forty-one percent of applications here aren't build requests — they're lawful development certificates. Legalising lofts, not replacing stock." |
-| 1:15 | Borough → **Newham** | "Biggest convert penalty: sixty-six percent extend approved, twenty-six percent convert. The compromise path dies here." |
-| 1:40 | London → click **Convert** | "Forty-six percent convert approval vs sixty extend. HMO and change-of-use conversions even worse — forty percent vs forty-eight." |
-| 2:10 | Close | "The asymmetry is in what gets filed — six-to-one extend versus knock-down by volume." |
+| 0:00 | Page open | "Seat 67: why don't we tear down old buildings? 151,000 Foreman applications — post-permission admin excluded." |
+| 0:20 | Point at hero | "Seventy-one percent extend. Eleven percent knock-down. Both approve around sixty percent." |
+| 0:50 | Borough → **Barking and Dagenham** | "Forty-one percent lawful development certificates — legalising lofts, not rebuild filings." |
+| 1:15 | Borough → **Newham** | "Extend sixty-six percent approved; change of use twenty-six percent." |
+| 1:40 | London → click **Convert** | "Forty-six percent convert approval vs sixty extend." |
+| 2:10 | Close | "Six extend filings per knock-down filing." |
 | 2:50 | Honesty (one line) | "Keyword classifier validated on 400 stratified apps; R Wilson CIs; not pro-demolition." |
 
 ## If over 3:00
@@ -32,7 +32,7 @@ Cut Barking. Keep: London headline → Newham → Convert click.
 
 See `reference/methodology-one-pager.md`, `reference/classifier-validation.md`, `reference/validation.md`.
 
-**If challenged on the headline:** "Small approval gap (~2.6pp replace minus extend); borough-cluster CI spans zero. Volume ratio six-to-one extend:replace — that's the story."
+**If challenged on the headline:** "2.6pp approval gap; borough bootstrap CI spans zero. Volume ratio six-to-one."
 
 **If challenged on methodology:** "400-app gold sample, pass-2 κ=0.88, legacy classifier macro-F1 0.92. Agent-labeled rubric — not independent human audit. See methodology one-pager."
 

@@ -4,7 +4,7 @@
 
 Interactive explorer of **151,398** classified Foreman planning applications across London, bucketed by keyword taxonomy: **extend / convert / replace / LDC**.
 
-**Offline demo:** `dist/replacement-gap.html`
+**Offline demo:** `dist/tear-down-applications.html`
 
 ## How we validated
 
@@ -18,9 +18,9 @@ Interactive explorer of **151,398** classified Foreman planning applications acr
 | **Structured fields** | n_dwellings, housing_relevance_score cross-check | Mostly empty / non-discriminating — see `reference/structured-validation.md` |
 | **External triangulation** | PLD guest API counts + House London #0 conclusions | See `reference/external-sources.md`, `reference/pld-triangulation.md` |
 
-## What we claim
+## Summary
 
-> London mostly **extends in place**. Knock-down and extend **approval rates are similar (~58–60%)**. The **asymmetry is submission volume**, not refusal.
+> 71% extend, 11% knock-down & rebuild. Stated approval: extend 60%, knock-down 58%. Count ratio ~6:1.
 
 ## What we do not claim
 

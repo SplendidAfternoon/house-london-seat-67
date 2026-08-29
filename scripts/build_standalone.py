@@ -1,4 +1,4 @@
-"""Bundle site/ into dist/replacement-gap.html for offline demo."""
+"""Bundle site/ into dist/tear-down-applications.html for offline demo."""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
 DIST = ROOT / "dist"
-OUT = DIST / "replacement-gap.html"
+OUT = DIST / "tear-down-applications.html"
 
 
 def main() -> None:

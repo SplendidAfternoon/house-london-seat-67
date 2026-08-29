@@ -107,11 +107,7 @@ loadData()
       const repShare = Math.round((100 * data.london.replace.count) / t);
       const extAp = Math.round(data.london.extend.approval_rate * 100);
       const repAp = Math.round(data.london.replace.approval_rate * 100);
-      hero.textContent = `${extShare}% of apps extend in place · ${repShare}% knock down & rebuild · both ~${extAp}–${repAp}% approved`;
-    }
-    const insight = document.getElementById("insight");
-    if (insight && data.takeaways?.headline) {
-      insight.textContent = data.takeaways.headline;
+      hero.textContent = `${extShare}% extend · ${repShare}% knock-down · ${extAp}% / ${repAp}% approved`;
     }
     const select = fillSelect(data);
     const redraw = () => renderBars(areaFor(data, select.value));

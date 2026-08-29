@@ -3,7 +3,7 @@
 **Engine:** R R version 4.6.1 (2026-06-24 ucrt)
 **Generated:** 2026-08-29T16:03:05+0100
 
-**Headline:** -2.6pp approval gap (cluster bootstrap 95% CI -6.3 to 2.8). Volume ratio extend:replace 6.3:1 — that is the story.
+**Summary:** -2.6pp approval gap (cluster bootstrap 95% CI -6.3 to 2.8). Volume ratio extend:replace 6.3:1.
 
 ## Approval by category (Wilson 95% CI)
 

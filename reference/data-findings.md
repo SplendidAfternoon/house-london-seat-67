@@ -2,9 +2,9 @@
 
 Generated after full validation program. See [`reference/methodology-one-pager.md`](reference/methodology-one-pager.md).
 
-## Headline
+## Summary
 
-**London mostly extends in place. Knock-down approval is comparable to extend; the asymmetry is submission volume.**
+71% extend, 11% knock-down & rebuild. Extend approved 60%; knock-down 58%. Count ratio ~6:1.
 
 | Category | Share of classified | Approval rate |
 |----------|-------------------|---------------|

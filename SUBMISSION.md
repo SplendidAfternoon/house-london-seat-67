@@ -1,14 +1,14 @@
-# Submission — Seat 67: Extend-in-Place
+# Submission — Seat 67: Tear-Down Applications
 
 | Field | Value |
 |-------|--------|
 | **Seat** | 67 |
 | **Question** | Why aren't we tearing down old buildings? |
-| **Team** | Seat 67 / Extend-in-Place |
+| **Team** | Seat 67 / Tear-Down Applications |
 
 ## Fastest demo (no wifi)
 
-Open **`dist/replacement-gap.html`** — double-click. Works offline.
+Open **`dist/tear-down-applications.html`** — double-click. Works offline.
 
 **Slides (methodology / judges):** **`dist/presentation.html`** — arrow keys to navigate. Works offline.
 
@@ -16,7 +16,7 @@ Upload that single file to House London Drive / submit link if required.
 
 ## Methodology (judges)
 
-151k Foreman applications classified by keyword taxonomy (extend / convert / replace / LDC). Validated on a **400-app stratified gold sample** (agent rubric, pass-2 κ=0.88, legacy classifier macro-F1 0.92 — not independent human audit). Approval rates reported with **R Wilson 95% CIs**. Headline: **6:1 extend:replace volume ratio**; ~2.6pp approval gap (comparable, not the story). Full details: `reference/methodology-one-pager.md`.
+151k Foreman applications classified by keyword taxonomy (extend / convert / replace / LDC). Validated on a **400-app stratified gold sample** (agent rubric, pass-2 κ=0.88, legacy classifier macro-F1 0.92 — not independent human audit). Approval rates reported with **R Wilson 95% CIs**. Extend : knock-down count ratio **6.3 : 1**; stated approval **60% vs 58%** (~2.6pp gap, borough bootstrap CI spans zero). Full details: `reference/methodology-one-pager.md`.
 
 ## How to run from source
 
@@ -35,7 +35,7 @@ https://forms.gle/c14LXvLtcESi6Lgz8
 
 ## Submit checklist (17:00)
 
-- [ ] `dist/replacement-gap.html` opens offline (airplane mode test)
+- [ ] `dist/tear-down-applications.html` opens offline (airplane mode test)
 - [ ] Rehearse `PITCH.md` under 3:00
 - [ ] Upload HTML to Drive or attach per organiser instructions
 

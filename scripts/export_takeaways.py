@@ -216,7 +216,7 @@ samples = ss["description"].dropna().head(8).tolist()
 
 payload = {
 
-    "headline": "London mostly extends in place. Knock-down approval is comparable to extend; the asymmetry is submission volume.",
+    "headline": "71% extend, 11% knock-down. Extend approved 60%, knock-down 58%.",
 
     "london_approval_by_category": london_rates,
 
@@ -266,7 +266,7 @@ compare = (
     else ("higher than" if replace_pct > extend_pct else "below")
 )
 payload["pitch_hooks"] = [
-    f"Replace applications approve at {replace_pct}% — {compare} extend ({extend_pct}%). We don't fail at demolition; we rarely ask.",
+    f"Knock-down applications: {replace_pct}% approved. Extend: {extend_pct}%. Count ratio ~6:1.",
     f"Barking: {round(ldc_boroughs[0]['ldc_pct'] * 100)}% of classified apps are LDCs — legalising existing work, not new builds.",
     (
         f"{top_gap['borough']}: {top_gap['extend_appr'] * 100:.0f}% extend approved vs "

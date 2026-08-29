@@ -127,7 +127,7 @@ def main() -> None:
         }
 
     payload = {
-        "title": "Extend-in-Place",
+        "title": "Tear-Down Applications",
         "seat": 67,
         "source": "https://foreman.house-london.uk/",
         "n_applications": int(len(df)),
