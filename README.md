@@ -1,5 +1,14 @@
 # Seat 67 — Tear-Down Applications (Technical Reference)
 
+**Present**
+
+| | Link |
+|---|------|
+| **Presentation** | https://splendidafternoon.github.io/house-london-seat-67/presentation.html |
+| **Interactive map** | https://splendidafternoon.github.io/house-london-seat-67/tear-down-applications.html |
+
+Slides: ← → arrow keys. Map: pick a borough, click a bar segment.
+
 > Foreman keyword sort of 151,398 London planning applications, grouped by description into extend, change of use, knock-down & rebuild, and legalise existing.
 
 House London #1 hackathon artifact. Categories come from free-text descriptions, not council form codes. Post-permission admin (condition discharges, S73) excluded. Counts applications and stated decisions, not homes built.
@@ -30,6 +39,7 @@ Extend applications outnumber knock-down filings ~6:1. Stated approval rates for
 ### 3. Aggregation & UI
 - **Borough cuts + examples:** `scripts/build_site.py` → `site/data.json`.
 - **Offline bundle:** `scripts/build_standalone.py` → `dist/tear-down-applications.html`.
+- **GitHub Pages:** `scripts/publish_pages.py` → `docs/`.
 
 ### 4. Validation
 - **R:** Wilson CIs, borough bootstrap, decision-policy sensitivity (`analysis/run_validation.R`).
@@ -39,8 +49,10 @@ Extend applications outnumber knock-down filings ~6:1. Stated approval rates for
 
 | File | Role |
 |------|------|
-| `dist/tear-down-applications.html` | Borough bar chart + example drill-down (offline) |
-| `dist/presentation.html` | Slide deck |
+| [presentation.html](https://splendidafternoon.github.io/house-london-seat-67/presentation.html) | Slide deck (GitHub Pages) |
+| [tear-down-applications.html](https://splendidafternoon.github.io/house-london-seat-67/tear-down-applications.html) | Borough bar chart + examples (GitHub Pages) |
+| `dist/tear-down-applications.html` | Same map, offline |
+| `dist/presentation.html` | Same slides, offline |
 | `reference/methodology-one-pager.md` | Validation map |
 | `reference/validation.md` | R output |
 
@@ -63,5 +75,3 @@ python scripts/sample_pld.py
 ```
 
 **Repo:** https://github.com/SplendidAfternoon/house-london-seat-67
-
-**GitHub Pages:** https://splendidafternoon.github.io/house-london-seat-67/ — [presentation](https://splendidafternoon.github.io/house-london-seat-67/presentation.html) · [map](https://splendidafternoon.github.io/house-london-seat-67/tear-down-applications.html)

@@ -49,6 +49,7 @@ def main() -> None:
         shutil.copy2(src, dst)
         print(f"    copied {name} ({dst.stat().st_size // 1024} KB)")
     (DOCS / "index.html").write_text(INDEX_HTML, encoding="utf-8")
+    (DOCS / ".nojekyll").touch()
     print(f"    wrote {DOCS / 'index.html'}")
 
 
