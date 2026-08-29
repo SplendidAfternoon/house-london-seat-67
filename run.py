@@ -21,6 +21,7 @@ STEPS = [
     ("Exporting verified takeaways", "export_takeaways.py"),
     ("Classifying and aggregating by borough", "build_site.py"),
     ("Bundling offline single-file demo", "build_standalone.py"),
+    ("Syncing docs/ for GitHub Pages", "publish_pages.py"),
 ]
 
 

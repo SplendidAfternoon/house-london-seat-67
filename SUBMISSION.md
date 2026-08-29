@@ -8,9 +8,12 @@
 
 ## Fastest demo (no wifi)
 
-Open **`dist/tear-down-applications.html`** — double-click. Works offline.
+**GitHub Pages (any browser, needs wifi):**
 
-**Slides (methodology / judges):** **`dist/presentation.html`** — arrow keys to navigate. Works offline.
+- https://splendidafternoon.github.io/house-london-seat-67/presentation.html
+- https://splendidafternoon.github.io/house-london-seat-67/tear-down-applications.html
+
+**Offline:** open **`dist/tear-down-applications.html`** or **`dist/presentation.html`** — double-click. Arrow keys on slides.
 
 Upload that single file to House London Drive / submit link if required.
 

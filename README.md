@@ -63,3 +63,5 @@ python scripts/sample_pld.py
 ```
 
 **Repo:** https://github.com/SplendidAfternoon/house-london-seat-67
+
+**GitHub Pages:** https://splendidafternoon.github.io/house-london-seat-67/ — [presentation](https://splendidafternoon.github.io/house-london-seat-67/presentation.html) · [map](https://splendidafternoon.github.io/house-london-seat-67/tear-down-applications.html)

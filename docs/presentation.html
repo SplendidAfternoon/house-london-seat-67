@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seat 67 — Tear-Down Applications</title>
+  <style>
+    :root {
+      --bg: #0f1210; --fg: #f4efe4; --muted: #b7b0a1; --line: #2a2f2b;
+      --extend: #d4a017; --convert: #4f8f7a; --replace: #c45c3e; --ldc: #6b7c8a; --accent: #8ecae6;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); color: var(--fg); font-family: "Segoe UI", system-ui, sans-serif; }
+    .deck { height: 100vh; width: 100vw; position: relative; }
+    .slide {
+      position: absolute; inset: 0; padding: 2.5rem clamp(1.25rem, 4vw, 3.5rem) 5rem;
+      display: flex; flex-direction: column; justify-content: center;
+      opacity: 0; pointer-events: none; transition: opacity 0.35s ease;
+      max-width: 920px; margin: 0 auto;
+    }
+    .slide.active { opacity: 1; pointer-events: auto; }
+    .eyebrow { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
+    h1 { font-family: Georgia, serif; font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 600; line-height: 1.2; margin: 0 0 0.75rem; }
+    h2 { font-size: clamp(1.15rem, 2.6vw, 1.5rem); font-weight: 600; margin: 0 0 0.75rem; color: var(--accent); }
+    p, li { font-size: clamp(0.98rem, 2vw, 1.12rem); line-height: 1.55; max-width: 40rem; }
+    .lede { color: var(--muted); }
+    table { border-collapse: collapse; font-size: 0.92rem; margin: 0.75rem 0; width: min(100%, 580px); }
+    th, td { border-bottom: 1px solid var(--line); padding: 0.45rem 0.6rem; text-align: left; }
+    th { color: var(--muted); font-weight: 500; font-size: 0.76rem; }
+    .num { font-variant-numeric: tabular-nums; }
+    figure.chart { margin: 0.85rem 0 0.35rem; max-width: 600px; }
+    figure.chart figcaption { font-size: 0.82rem; color: var(--muted); margin-top: 0.45rem; line-height: 1.4; }
+    .legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-top: 0.5rem; font-size: 0.82rem; color: var(--muted); }
+    .legend span::before { content: ""; display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 2px; margin-right: 0.3rem; vertical-align: -1px; }
+    .legend .extend::before { background: var(--extend); }
+    .legend .convert::before { background: var(--convert); }
+    .legend .replace::before { background: var(--replace); }
+    .legend .ldc::before { background: var(--ldc); }
+    ul.plain { margin: 0.35rem 0; padding-left: 1.15rem; }
+    ul.plain li { margin: 0.25rem 0; font-size: 0.98rem; }
+    .nav { position: fixed; bottom: 1rem; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 1rem; z-index: 10; background: #1a1e1ce6; padding: 0.45rem 0.9rem; border-radius: 999px; border: 1px solid var(--line); }
+    .nav button { background: transparent; border: 1px solid var(--line); color: var(--fg); padding: 0.35rem 0.75rem; border-radius: 4px; cursor: pointer; font: inherit; }
+    .nav span { font-size: 0.85rem; color: var(--muted); min-width: 3.5rem; text-align: center; }
+    .hint { position: fixed; top: 0.75rem; right: 0.75rem; font-size: 0.72rem; color: var(--muted); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <p class="hint">← →</p>
+  <div class="deck">
+
+    <section class="slide active">
+      <p class="eyebrow">House London #1 · Seat 67</p>
+      <h1>Why aren't we tearing down old buildings?</h1>
+      <p class="lede">151,398 Foreman applications, keyword-sorted.</p>
+      <p>71% extend. 11% knock-down &amp; rebuild. Extend approval 60%. Knock-down approval 58%.</p>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Data</p>
+      <h2>Foreman extract</h2>
+      <table>
+        <tr><th>Slice</th><th>n</th></tr>
+        <tr><td>Raw</td><td class="num">181,929</td></tr>
+        <tr><td>Classified</td><td class="num">151,398</td></tr>
+        <tr><td>Excluded</td><td class="num">30,531</td></tr>
+      </table>
+      <p class="lede">Post-permission paperwork dropped from knock-down counts.</p>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Mix</p>
+      <h2>Four buckets from description text</h2>
+      <figure class="chart">
+        <svg viewBox="0 0 560 120" width="100%" role="img" aria-label="Application mix">
+          <text x="0" y="14" fill="#b7b0a1" font-size="12">Classified applications, London</text>
+          <rect x="0" y="28" width="398" height="36" fill="#d4a017" rx="2"/>
+          <rect x="402" y="28" width="56" height="36" fill="#4f8f7a" rx="2"/>
+          <rect x="462" y="28" width="62" height="36" fill="#c45c3e" rx="2"/>
+          <rect x="528" y="28" width="32" height="36" fill="#6b7c8a" rx="2"/>
+          <text x="8" y="52" fill="#1a1200" font-size="13" font-weight="600">Extend 71%</text>
+          <text x="402" y="52" fill="#fff" font-size="11">10%</text>
+          <text x="468" y="52" fill="#fff" font-size="11">11%</text>
+          <text x="532" y="52" fill="#fff" font-size="10">7%</text>
+        </svg>
+        <figcaption>Extend · change of use · knock-down &amp; rebuild · legalise existing.</figcaption>
+        <div class="legend">
+          <span class="extend">Extend</span>
+          <span class="convert">Change of use</span>
+          <span class="replace">Knock-down &amp; rebuild</span>
+          <span class="ldc">Legalise existing</span>
+        </div>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Counts</p>
+      <h2>6.3 extend per knock-down filing</h2>
+      <figure class="chart">
+        <svg viewBox="0 0 560 150" width="100%" role="img" aria-label="107502 extend vs 17180 knock-down">
+          <text x="0" y="16" fill="#b7b0a1" font-size="12">Applications</text>
+          <text x="0" y="42" fill="#f4efe4" font-size="13">Extend</text>
+          <rect x="0" y="48" width="520" height="28" fill="#d4a017" rx="2"/>
+          <text x="8" y="67" fill="#1a1200" font-size="12" font-weight="600">107,502</text>
+          <text x="0" y="98" fill="#f4efe4" font-size="13">Knock-down &amp; rebuild</text>
+          <rect x="0" y="104" width="83" height="28" fill="#c45c3e" rx="2"/>
+          <text x="8" y="123" fill="#fff" font-size="12" font-weight="600">17,180</text>
+        </svg>
+        <figcaption>GLA householder vs conservation-demolition types: 17.5 : 1 (phrase counts).</figcaption>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Approval</p>
+      <h2>Stated decisions</h2>
+      <figure class="chart">
+        <svg viewBox="0 0 560 130" width="100%" role="img" aria-label="Approval rates">
+          <text x="0" y="14" fill="#b7b0a1" font-size="12">Approved share (grey track = 100%)</text>
+          <text x="130" y="38" fill="#f4efe4" font-size="12" text-anchor="end">Extend</text>
+          <rect x="140" y="26" width="280" height="20" fill="#2a2f2b" rx="2"/><rect x="140" y="26" width="168" height="20" fill="#d4a017" rx="2"/>
+          <text x="430" y="40" fill="#f4efe4" font-size="12">60%</text>
+          <text x="130" y="68" fill="#f4efe4" font-size="12" text-anchor="end">Knock-down</text>
+          <rect x="140" y="56" width="280" height="20" fill="#2a2f2b" rx="2"/><rect x="140" y="56" width="161" height="20" fill="#c45c3e" rx="2"/>
+          <text x="430" y="70" fill="#f4efe4" font-size="12">58%</text>
+          <text x="130" y="98" fill="#f4efe4" font-size="12" text-anchor="end">Change of use</text>
+          <rect x="140" y="86" width="280" height="20" fill="#2a2f2b" rx="2"/><rect x="140" y="86" width="129" height="20" fill="#4f8f7a" rx="2"/>
+          <text x="430" y="100" fill="#f4efe4" font-size="12">46%</text>
+        </svg>
+        <figcaption>Point gap extend − knock-down: 2.6pp. Borough bootstrap 95% CI: −6.3 to +2.8pp.</figcaption>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Change of use</p>
+      <h2>Lower approval than extend</h2>
+      <p>Newham: extend 66%, change of use 26%. PlanIt sample from House London #0 shows the same ordering.</p>
+      <p class="lede">HMO subset: 28% of change-of-use bucket; 40% approved.</p>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Legalise</p>
+      <h2>Certificate-heavy boroughs</h2>
+      <table>
+        <tr><th>Borough</th><th>Legalise share</th></tr>
+        <tr><td>Barking and Dagenham</td><td class="num">41%</td></tr>
+        <tr><td>Waltham Forest</td><td class="num">35%</td></tr>
+        <tr><td>Newham</td><td class="num">25%</td></tr>
+      </table>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Validation</p>
+      <h2>Checks</h2>
+      <ul class="plain">
+        <li>400-app gold sample — macro-F1 0.92</li>
+        <li>80-row re-label — κ 0.883</li>
+        <li>Wilson CIs, borough bootstrap (R)</li>
+        <li>PLD guest API phrase counts</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Limits</p>
+      <h2>Scope</h2>
+      <ul class="plain">
+        <li>Applications filed, not completions.</li>
+        <li>Keyword sort on description text.</li>
+        <li>Borough spreads not multiple-comparison corrected.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Files</p>
+      <h2>Artifacts</h2>
+      <p><a href="tear-down-applications.html">tear-down-applications.html</a> — borough bar + examples.</p>
+      <p class="lede">Seat 67 · Tear-Down Applications</p>
+    </section>
+
+  </div>
+  <nav class="nav">
+    <button type="button" id="prev">←</button>
+    <span id="counter">1 / 10</span>
+    <button type="button" id="next">→</button>
+  </nav>
+  <script>
+    const slides = [...document.querySelectorAll(".slide")];
+    let i = 0;
+    const counter = document.getElementById("counter");
+    function show(n) {
+      i = Math.max(0, Math.min(slides.length - 1, n));
+      slides.forEach((s, j) => s.classList.toggle("active", j === i));
+      counter.textContent = `${i + 1} / ${slides.length}`;
+    }
+    document.getElementById("prev").onclick = () => show(i - 1);
+    document.getElementById("next").onclick = () => show(i + 1);
+    document.onkeydown = (e) => {
+      if (["ArrowRight"," ","PageDown"].includes(e.key)) { e.preventDefault(); show(i+1); }
+      if (["ArrowLeft","PageUp"].includes(e.key)) { e.preventDefault(); show(i-1); }
+    };
+  </script>
+</body>
+</html>
