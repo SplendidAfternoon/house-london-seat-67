@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seat 67 — The Replacement Gap</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <p class="eyebrow">Seat 67 · House London #1</p>
+      <h1>The Replacement Gap</h1>
+      <p class="hero-stat">Extend 55% · Convert 46% approved · Replace 19%</p>
+      <p id="insight" class="insight"></p>
+      <p class="lede">
+        Everyone asks if we <em>should</em> tear down old buildings. I asked if the
+        system <em>ever does</em>. The applications say: we dormer.
+      </p>
+    </header>
+
+    <section class="controls">
+      <label for="borough">Borough</label>
+      <select id="borough"></select>
+    </section>
+
+    <section class="chart-wrap">
+      <div id="bars" role="img" aria-label="Application mix stacked bar"></div>
+      <p id="summary"></p>
+    </section>
+
+    <section id="examples" hidden>
+      <h2 id="examples-title">Examples</h2>
+      <ul id="example-list"></ul>
+    </section>
+
+    <details class="policy-footnote">
+      <summary>Why demolition is the hard path</summary>
+      <ul>
+        <li>Retrofit-first and embodied carbon make retention the default.</li>
+        <li>UK demolition collapsed after the post-war era — extend-in-place is the norm.</li>
+        <li>Demolition is costly and politically contested (estates, ballots).</li>
+      </ul>
+    </details>
+
+    <footer>
+      <p id="honesty"></p>
+      <p>Data: <a href="https://foreman.house-london.uk/">Foreman</a></p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

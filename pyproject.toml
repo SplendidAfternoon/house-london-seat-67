@@ -1,0 +1,9 @@
+[project]
+name = "house-london-seat-67"
+version = "0.1.0"
+description = "Seat 67 — The Replacement Gap (House London hackathon)"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "requests>=2.28",
+]

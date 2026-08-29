@@ -1,0 +1,6 @@
+Seat 67 — House London hackathon
+
+Question: Why aren't we tearing down old buildings?
+
+Product: One-page interactive data explorer showing Foreman application mix
+(extend vs convert vs replace/demo vs LDC) with borough filter and example drill-down.
